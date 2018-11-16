@@ -41,6 +41,7 @@ namespace StarChart.Controllers
             return Ok(model);
         }
 
+        [HttpGet]
         public IActionResult GetAll()
         {
             var model = _context.CelestialObjects.ToList();
